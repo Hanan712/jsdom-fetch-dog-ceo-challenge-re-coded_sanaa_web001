@@ -48,7 +48,7 @@ dropdown.value="🐶";
 
 dropdown.addEventListener("change", function() {
     let allLis = document.querySelectorAll("li");
-    let val = event.target.value; 
+    let val = event.target.value;
     for (let i = 0; i < allLis.length; i++) {
         if (allLis[i].dataset.dogBreed != val) {
             allLis[i].hidden = true;
@@ -57,4 +57,3 @@ dropdown.addEventListener("change", function() {
         }
     }
 })
-
